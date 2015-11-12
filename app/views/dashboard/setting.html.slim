@@ -1,0 +1,33 @@
+.col-sm-12
+  h2 Slack Stripe Subscription Manager  
+  = link_to '<i class="fa fa-plus"></i> New'.html_safe, '#', class: 'btn btn-primary pull-right'
+  table.table.table-striped
+    thead    
+      tr        
+        th #
+        th Name
+        th Subscriptions
+        th Active
+    tbody
+      tr
+        td 1
+        td Tadam Trader ($20/month)
+        td 1650
+        td
+          = link_to 'Activate', '#', class: 'btn btn-primary btn-xs'          
+          = link_to 'De-ativate', '#', class: 'btn btn-danger btn-xs'
+      tr
+        td 2
+        td Tadam Trader ($100/semin-annual)
+        td 400
+        td
+          = link_to 'Activate', '#', class: 'btn btn-primary btn-xs'          
+          = link_to 'De-ativate', '#', class: 'btn btn-danger btn-xs'
+
+      tr
+        td 3
+        td Tadam Trader ($175/annual)
+        td 120
+        td
+          = link_to 'Activate', '#', class: 'btn btn-primary btn-xs'          
+          = link_to 'De-ativate', '#', class: 'btn btn-danger btn-xs'

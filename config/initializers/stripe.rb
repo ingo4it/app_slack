@@ -1,0 +1,2 @@
+STRIPE_CLIENT_ID = "ca_7IKNwaEyMiY8Umrklmag89tSqNX8BUpA"
+STRIPE_SECRET_KEY = "sk_test_89zIsulClkVzkpOjaMV56bah"

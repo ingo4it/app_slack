@@ -1,0 +1,11 @@
+.col-sm-12
+  h2 Dashboard
+
+  .form-group
+    = link_to 'Connect with Slack', '#', class: 'btn btn-primary'  
+
+  .form-group
+    - if current_user.account.present?
+      label.btn-success Stripe Account Connected
+    - else
+      = link_to image_tag('blue.png'), 'https://connect.stripe.com/oauth/authorize?response_type=code&scope=read_write&stripe_landing=login&client_id='+STRIPE_CLIENT_ID+'&user_id='+current_user.id.to_s
